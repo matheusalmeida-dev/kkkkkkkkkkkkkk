@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-image: url('muro.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button {
+    margin: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s, width 1.5s, height 1.5s;
+    pointer-events: none;
+    z-index: 9999;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#redOverlay {
+    background-image: url('retirese.jpg');
+}
+
+#greenOverlay {
+    background-image: url('greenBackground.jpg');
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    margin: 5% 5% 5% 5%;
+}
+
+.painel {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+
+.meio {
+    margin-top: 50%;
+}
